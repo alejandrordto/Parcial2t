@@ -3,21 +3,23 @@ var weatherValues;
 
 
 function searchCityWeather(){
-    getCityWeather(Details);
+    getCityWeather();
 }
- function getCityWeather(callback){
-          if(callback) callback();
-console.log()
-           var url="http://localhost:5000/weather/"+selectedCity.value
+ function getCityWeather(){
+         
+    area =$('#data');
+        selectedCity=$('#city').val();
+    
+           var url="http://localhost:8080/weather/"+selectedCity
             var xmlHttp = new XMLHttpRequest();
                 xmlHttp.open("GET", url, false); // false for synchronous request
                 xmlHttp.send(null);
                 var lista =xmlHttp.responseText;
+console.log(lista)
            
                  
 
     }
     function Details(){
-        area =$('#data');
-        selectedCity=$('#city');
+        
     }
