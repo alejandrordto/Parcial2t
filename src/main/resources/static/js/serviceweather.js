@@ -10,16 +10,22 @@ function searchCityWeather(){
     area =$('#data');
         selectedCity=$('#city').val();
     
-           var url="http://localhost:8080/weather/"+selectedCity
+           var url="https://rodriguez-arsw-t2.herokuapp.com/weather/"+selectedCity
             var xmlHttp = new XMLHttpRequest();
                 xmlHttp.open("GET", url, false); // false for synchronous request
                 xmlHttp.send(null);
                 var lista =xmlHttp.responseText;
-console.log(lista)
+lista=JSON.parse(lista);
+var up= getVals(lista)
+area.val(up)
+
            
                  
 
     }
-    function Details(){
-        
+    function getVals(lista){
+        var answer='';
+        answer=answer+'Temperatura '+lista['main']['temp']
+        answer= answer +' Precion atmosferica ' + lista;
+        return answer;
     }
