@@ -6,7 +6,12 @@ La aplicacion fue diseñada, haciendo uso de spring,java y jquery, y para el des
 
 Para usarala:
 Entre a heroku; https://rodriguez-arsw-t2.herokuapp.com/.
+
+
+
 ingrese una ciudad.
 
 url: https://github.com/alejandrordto/RODRIGUEZ-ARSW-T2
     
+
+Nota esperada: 28.
