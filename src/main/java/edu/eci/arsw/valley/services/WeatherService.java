@@ -24,6 +24,11 @@ public class WeatherService {
     private static final String SITE = "http://api.openweathermap.org/data/2.5/weather?q=";
     private static final String ID = "&appid=41754e17305d1f15a51861d938918408";
     private static final String AGENT = "Mozilla/5.0";
+    /**
+     * metodo para comunicarse con el appi de clima y sacar los datos.
+     * @param city The city to which the climate is going to be consulted.
+     * @return The information of the weather.
+     */
     public String getInfo(String city) throws IOException {
 
         URL obj = new URL(SITE+city+ID);

@@ -29,7 +29,7 @@ public class WeatherController {
     WeatherService owms;
 
     /**
-     * 
+     * Clase para el metodo get del APIREST
      * @param city The city to which the climate is going to be consulted.
      * @return The information of the weather.
      */
